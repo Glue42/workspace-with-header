@@ -1,46 +1,29 @@
-# Getting Started with Create React App
+# Workspaces with header example
+The project demonstrates a basic Workspaces react app which has pinned tabs, a custom header and illustrates the two approaches of adding Windows 7 compatible popups.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Prerequisites
+- Glue42 Desktop **3.13** or newer
+- `@glue42/workspaces-ui-react` **1.5.2** or newer
+- A workspace layout named **"Home"**
+- A workspace layout named **"Docs"**
 
-## Available Scripts
+## Setup
+To save the two layouts mentioned in the prerequisites:
+- Start Glue42 Desktop and open **Workspaces UI**
+- Add your desired apps for **"Home"**
+- Click on the save icon located in the workspace tab
+- Save the layout with the name **"Home"**
+- Repeat for **"Docs"**
 
-In the project directory, you can run:
+To use the custom frame in Glue42 Desktop:
+- Start by cloning the repository - `git clone https://github.com/Glue42/workspace-with-header.git`
+- Install the dependencies - `npm install`
+- Start the development server - `npm start`
+- Go to the installation folder of Glue42 Desktop and find `workspaces.json`
+- Replace the workspaces-demo definition with the one in the repository - **./workspaces.json**
+- Start Glue42 Desktop and start the Workspaces UI application
 
-### `npm start`
+## Components of the frame
+The application consists of <Workspaces/> and a custom header which contains a popup that is not managed by `@glue42/workspaces-ui-react` and uses the `useWorkspacePopup()` hook to achieve Windows 7 compatibility. Also the header has a `<MoveArea/>` component which enables the user to change the area with which you can drag your frame and a <SearchBar/> which uses the second approach for a Windows 7 compatible popup in Workspaces (it uses  the `<WorkspacesPopup/>` component).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+As well as the customized elements the frame also has an example for pinned tabs. On the left side you will be able to see two icons which represent two pinned workspaces - `"Home"` and `"Docs"`.

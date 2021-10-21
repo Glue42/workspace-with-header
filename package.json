@@ -5,8 +5,8 @@
   "dependencies": {
     "@glue42/desktop": "^5.7.3",
     "@glue42/react-hooks": "^2.3.1",
-    "@glue42/workspaces-api": "^1.8.0",
-    "@glue42/workspaces-ui-react": "^1.5.1",
+    "@glue42/workspaces-api": "^1.8.1",
+    "@glue42/workspaces-ui-react": "^1.5.2",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
