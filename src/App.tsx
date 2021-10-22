@@ -75,8 +75,6 @@ const App = () => {
 			const activeWorkspace = workspaces!.find(w => w.isSelected);
 
 			setActiveWorkspaceId((activeId) => {
-				console.log("activeId when setting", activeId);
-				console.log("activeWorkspace", activeWorkspace);
 				return activeId || activeWorkspace?.id; // making sure that an event hasn't come before we get the active workspace
 			});
 		}).catch(console.log);
