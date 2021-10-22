@@ -3,11 +3,13 @@ import Workspaces, { getFrameId } from "@glue42/workspaces-ui-react";
 import "@glue42/workspaces-ui-react/dist/styles/popups.css";
 import "@glue42/workspaces-ui-react/dist/styles/goldenlayout-base.css";
 import "@glue42/workspaces-ui-react/dist/styles/glue42-theme.css";
+import "@glue42/workspaces-ui-react/dist/styles/t42bootstrap.bundle.css";
 import "./index.css";
 import { GlueContext } from '@glue42/react-hooks';
 import CustomFrameHeader from './components/CustomFrameHeader';
 import { Glue42 } from '@glue42/desktop';
 import { Glue42Workspaces } from '@glue42/workspaces-api';
+import "@glue42/theme/dist/components/icons.css"
 
 const App = () => {
 	(window as any).glue = useContext(GlueContext);
@@ -100,18 +102,12 @@ const App = () => {
 			<Workspaces components={{
 				header: {
 					LogoComponent: () => <>
-						<span style={{
-							cursor: "pointer",
-							backgroundColor: activeWorkspaceId === homeWorkspace?.id ? "grey" : "transparent",
-							height: "24px", width: "24px",
-							backgroundImage: `url("./home_white_24dp.svg")`
-						}} onClick={onHomeClicked} />
-						<span style={{
-							cursor: "pointer",
-							height: "24px", width: "24px",
-							backgroundColor: activeWorkspaceId === docsWorkspace?.id ? "grey" : "transparent",
-							backgroundImage: `url("./assignment_white_24dp.svg")`
-						}} onClick={onDocsClicked} />
+					<span className={"align-items-center d-flex icon-size-24 mx-2" + (activeWorkspaceId === homeWorkspace?.id ? " icon-active" : "")} onClick={onHomeClicked} >
+						<i className="icon-home"/>
+					</span>	
+					<span className={"align-items-center d-flex icon-size-24 mx-2 d-flex" + (activeWorkspaceId === docsWorkspace?.id ? " icon-active" : "")} onClick={onDocsClicked} >
+						<i className="icon-globe"/>
+					</span>											
 					</>,
 					SystemButtonsComponent: () => <></>
 				}

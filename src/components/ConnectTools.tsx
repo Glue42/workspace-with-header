@@ -26,22 +26,19 @@ const ConnectTools = () => {
     };
 
     const containerStyle: CSSProperties = {
+        cursor: "pointer",
         display: "flex",
         flexDirection: "row",
         alignItems: "center"
-    };
-
-    const iconStyle: CSSProperties = {
-        width: "24px",
-        height: "24px",
-        backgroundImage: "url(./apps_white_24dp.svg)"
     };
 
     return (
         <>
             {showPopup && <ConnectToolsPopup />}
             <div onClick={onClick} style={containerStyle}>
-                <span style={iconStyle}></span>
+                <span className="icon-size-16 mx-2">
+                    <i className="icon-th-large"></i>
+                </span>
                 <div>Connect Tools</div>
             </div>
         </>);

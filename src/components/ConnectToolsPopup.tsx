@@ -8,22 +8,19 @@ const ConnectToolsPopup = () => {
     const popupWidth = 200;
     const popupHeight = 200;
     const popupTop = 30;
-    const popupLeft = 0;
+    const popupLeft = 5;
 
     const popupStyle: CSSProperties = {
-        backgroundColor: "white",
         top: popupTop,
         left: popupLeft,
         width: popupWidth,
         height: popupHeight,
-        position: "absolute",
-        zIndex: 200,
-        color: "black"
+        zIndex: 200,        
     }
 
     useWorkspacePopup(ref);
 
-    return (<div ref={ref} style={popupStyle}>
+    return (<div className="bg-base p-3 position-absolute" ref={ref} style={popupStyle}>
         Sample popup which is not managed by @glue42/workspaces-ui-react.
     </div>)
 }

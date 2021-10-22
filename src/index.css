@@ -1,3 +1,13 @@
 #root{
   height: 100%;
 }
+.icon-size-24 {
+  cursor: pointer;
+}
+.icon-active {
+  color: var(--t42-link-color);
+}
+.lm_logo span {
+  display: flex;
+  align-items:flex-end;
+}

@@ -7,7 +7,7 @@ const SearchBar = () => {
         height:"25px"
     };
 
-    return <input style={style} value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} type={"text"} />
+    return <input className="form-control" style={style} value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} type={"text"} />
 };
 
 export default SearchBar;

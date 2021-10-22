@@ -6,7 +6,9 @@ class SearchBarPopup extends React.Component {
     render() {
         const popupRef = React.createRef() as React.RefObject<any>;
         return <WorkspacePopup innerContentStyle={{ height: 300 }} arrow={false} popupRef={popupRef} trigger={SearchBar}>
-            <div style={{ backgroundColor: "white", width:"140px" }}>This is a dropdown</div>
+            <div className="bg-base p-1 py-3" style={{ width: "140px", height:"200px" }}>
+                This is a dropdown
+            </div>
         </WorkspacePopup>
     }
 };
