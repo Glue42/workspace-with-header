@@ -4,14 +4,7 @@
     "name": "workspaces-demo",
     "icon": "http://localhost:22080/resources/icons/workspaces.ico",
     "details": {
-        "layouts": [
-            {
-                "layoutName": "Home",
-                "restoreConfig": {
-                    "noTabHeader": true
-                }
-            }
-        ],
+        "layouts": [],
         "windowState": "normal",
         "url": "http://localhost:3000"
     },
