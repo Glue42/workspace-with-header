@@ -4,7 +4,7 @@ The project demonstrates a basic Workspaces react app which has pinned tabs, a c
 - Glue42 Desktop **3.14** or newer
 - `@glue42/workspaces-ui-react` **1.7.3** or newer
 - A workspace layout named **"Home"**
-- A workspace layout named **"Docs"**
+- A workspace layout named **"Start of day"**
 
 ## Setup
 To save the two layouts mentioned in the prerequisites:
