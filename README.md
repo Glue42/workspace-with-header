@@ -1,9 +1,8 @@
 # Workspaces with header example
 The project demonstrates a basic Workspaces react app which has pinned tabs, a custom header and illustrates the two approaches of adding Windows 7 compatible popups.
-![alt text](./img/WorkspacesWithCustomHeader.png "Workspaces with custom header")
 ## Prerequisites
-- Glue42 Desktop **3.13** or newer
-- `@glue42/workspaces-ui-react` **1.5.2** or newer
+- Glue42 Desktop **3.14** or newer
+- `@glue42/workspaces-ui-react` **1.7.3** or newer
 - A workspace layout named **"Home"**
 - A workspace layout named **"Docs"**
 
